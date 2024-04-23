@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St1nkyG</title>
+</head>
+<body>
+    <h1>wsp my guy</h1>
+    <p>Welcome to my site lol</p>
+    
+    <h2>Links</h2>
+    <ul>
+        <li><a href="https://discord.gg/spUDY7nvcx">Discord server</a></li>
+        <li><a href="https://www.youtube.com/channel/UCSNwxRJVNz4WW0sY0AfaR5Q">Youtube Channel</a></li>
+    </ul>
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button onclick="changeColor()">Change Color</button>
+        <button onclick="changeImage()">Change Image</button>
+    </div>
+
+    <script>
+        let colorIndex = 0;
+        const colors = ['#ff6347', '#4682b4', '#90ee90', '#ffa500'];
+
+        function changeColor() {
+            document.body.style.backgroundColor = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+        }
+
+        let imageIndex = 0;
+        const images = ['url("https://cdn.discordapp.com/attachments/1232406006298968078/1232406497343049779/Screenshot_15-removebg-preview.png?ex=6629577d&is=662805fd&hm=ebcc2098e49b012498b5a063239eb391aa3b9867c84274bd1aa59ca3c1cfd3e5&")'];
+
+        function changeImage() {
+            document.body.style.backgroundImage = images[imageIndex];
+            imageIndex = (imageIndex + 1) % images.length;
+        }
+    </script>
+</body>
+
+
+</body>
+</html>
